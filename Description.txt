@@ -1,0 +1,3 @@
+En este repositorio guardo mis proyectos y mis codigos en general, utilizando HTML5, CSS3, Java, C++, Python, SQL, MySQL y otros lenguajes.
+
+- Andrés Espitia
