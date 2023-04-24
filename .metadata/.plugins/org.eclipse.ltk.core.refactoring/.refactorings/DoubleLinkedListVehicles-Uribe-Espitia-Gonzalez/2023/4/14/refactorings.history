@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Panes.java&apos; to &apos;TransporMinuteEspitiaGonzalezUribe/src/co.edu.unbosque.view&apos;&#x0D;&#x0A;- Original project: &apos;DoubleLinkedListVehicles-Uribe-Espitia-Gonzalez&apos;&#x0D;&#x0A;- Destination element: &apos;TransporMinuteEspitiaGonzalezUribe/src/co.edu.unbosque.view&apos;&#x0D;&#x0A;- Original element: &apos;co.edu.unbosque.view.Panes.java&apos;" description="Copy compilation unit" destination="=TransporMinuteEspitiaGonzalezUribe/src&lt;co.edu.unbosque.view" element1="/src&lt;co.edu.unbosque.view{Panes.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1680805355228" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;co.edu.unbosque.model.Ejemplo4&apos; to &apos;Ejemplo4Ping&apos;&#x0D;&#x0A;- Original project: &apos;AndresFelipeEspitia_ThreadsEjemplos&apos;&#x0D;&#x0A;- Original element: &apos;co.edu.unbosque.model.Ejemplo4&apos;&#x0D;&#x0A;- Renamed element: &apos;co.edu.unbosque.model.Ejemplo4Ping&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Ejemplo4&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;co.edu.unbosque.model{Ejemplo4.java[Ejemplo4" matchStrategy="1" name="Ejemplo4Ping" qualified="false" references="true" similarDeclarations="false" stamp="1676232950344" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\andre\Downloads\[SOURCE] Queue (Colas)-20230405"/>
+			<item value="C:\Users\andre\Downloads\[SOURCE] Queue (Colas)-20230405\EjercicioColaCine"/>
+			<item value="C:\Users\andre\OneDrive\Documentos\UNIVERSIDAD\PRIMER SEMESTRE\FUNDAMENTOS DE PROGRAMACION\PF_FdP_EspitiaAndres_ForeroDiego_UribeCamilo\The Portals - ADC"/>
+			<item value="C:\Users\andre\OneDrive\Documentos\UNIVERSIDAD\SEGUNDO SEMESTRE\PROGRAMACION 1\Pokedex-20220906T004948Z-001\Pokedex"/>
+			<item value="C:\Users\andre\OneDrive\Documentos\UNIVERSIDAD\SEGUNDO SEMESTRE\PROGRAMACION 1\Pokedex-20221012T213738Z-001"/>
+			<item value="C:\Users\andre\Downloads\[SOURCE] StackPilas-20230405\Stack"/>
+			<item value="C:\Users\andre\Downloads\ListaPersonas"/>
+			<item value="C:\Users\andre\Downloads\TiroParabolico-ProyectoNucleo\TiroParabolico-ProyectoNucleo"/>
+			<item value="C:\Users\andre\Downloads\ESPITIAFOREROMEJIAURIBEHilos\ESPITIAFOREROMEJIAURIBEHilos\ESPITIAFOREROMEJIAURIBEHilos\ESPITIAFOREROMEJIAURIBEHilos"/>
+			<item value="C:\Users\andre\Downloads\ESPITIAFOREROMEJIAURIBEHilos\ESPITIAFOREROMEJIAURIBEHilos"/>
+			<item value="C:\Users\andre\OneDrive\Documentos\UNIVERSIDAD\TERCER SEMESTRE\PROGRAMACION 2\ESPITIAFOREROMEJIAURIBEHilos"/>
+			<item value="C:\Users\andre\Downloads\ordenamiento\ordenamiento"/>
+			<item value="C:\Users\andre\OneDrive\Documentos\UNIVERSIDAD\SEGUNDO SEMESTRE\PROGRAMACION 1\PROYECTO FINAL\PRF_ PGR1_202202_EspitiaAndres_ForeroDiego_MejiaEsteban_UribeCamilo\Red Thread"/>
+			<item value="C:\Users\andre\Downloads\Red Thread-20221204T211303Z-001\Red Thread"/>
+			<item value="C:\Users\andre\Downloads\Red Thread-20221204T210725Z-001\Red Thread"/>
+			<item value="C:\Users\andre\Downloads\Red Thread-20221204T195913Z-001\Red Thread"/>
+			<item value="C:\Users\andre\Downloads\Red Thread-20221204T163829Z-001\Red Thread"/>
+			<item value="C:\Users\andre\Downloads\Red Thread-20221203T221304Z-001\Red Thread"/>
+			<item value="C:\Users\andre\Downloads\Red Thread-20221203T211827Z-001\Red Thread"/>
+			<item value="C:\Users\andre\Downloads\Red Thread-20221203T021634Z-001\Red Thread"/>
+			<item value="C:\Users\andre\Downloads\Red Thread-20221201T215641Z-001\Red Thread"/>
+			<item value="C:\Users\andre\Downloads\Red Thread-20221130T024126Z-001\Red Thread"/>
+			<item value="C:\Users\andre\OneDrive\Documentos\UNIVERSIDAD\SEGUNDO SEMESTRE\PROGRAMACION 1\PROYECTO FINAL\Red Thread"/>
+			<item value="C:\Users\andre\Downloads\Red Thread-20221115T023828Z-001\Red Thread"/>
+			<item value="C:\Users\andre\Downloads\perssitenia"/>
+			<item value="C:\Users\andre\OneDrive\Documentos\UNIVERSIDAD\SEGUNDO SEMESTRE\PROGRAMACION 1\Shark (3)\Shark"/>
+			<item value="C:\Users\andre\OneDrive\Documentos\UNIVERSIDAD\SEGUNDO SEMESTRE\PROGRAMACION 1\ConnectFour"/>
+			<item value="C:\Users\andre\Downloads\ConnectFour-20221015T192735Z-001\ConnectFour"/>
+			<item value="C:\Users\andre\Downloads\Pokedex-20221012T213738Z-001\Pokedex"/>
+			<item value="C:\Users\andre\Downloads\ConnectFour-20221012T212319Z-001\ConnectFour"/>
+			<item value="C:\Users\andre\Downloads\DijkastraPlanetas\DijkastraPlanetas"/>
+			<item value="C:\Users\andre\OneDrive\Documentos\UNIVERSIDAD\SEGUNDO SEMESTRE\PROGRAMACION 1\Persistencia - Diego Forero &amp; Andres Espitia\Persistencia - Diego Forero &amp; Andres Espitia"/>
+			<item value="C:\Users\andre\OneDrive\Documentos\UNIVERSIDAD\SEGUNDO SEMESTRE\PROGRAMACION 1\Persistencia"/>
+			<item value="C:\Users\andre\Downloads\Pokedex-20220905T031934Z-001\Pokedex"/>
+			<item value="C:\Users\andre\Downloads\Pokedex-20220904T030856Z-001\Pokedex"/>
+			<item value="C:\Users\andre\Downloads\Pokedex-20220903T213736Z-001\Pokedex"/>
+			<item value="C:\Users\andre\Downloads\Pokedex-20220902T023239Z-001\Pokedex"/>
+			<item value="C:\Users\andre\Downloads\Pokedex-20220902T015244Z-001\Pokedex"/>
+			<item value="C:\Users\andre\OneDrive\Documentos\UNIVERSIDAD\SEGUNDO SEMESTRE\PROGRAMACION 1\EjemploDAO_DTO"/>
+			<item value="C:\Users\andre\OneDrive\Documentos\UNIVERSIDAD\SEGUNDO SEMESTRE\PROGRAMACION 1\BFS_GATOS_PERROS"/>
+			<item value="C:\Users\andre\OneDrive\Documentos\BFS_GATOS_PERROS"/>
+			<item value="D:\BFS_GATOS_PERROS"/>
+			<item value="C:\Users\andre\Downloads\Matematicas Discretas"/>
+			<item value="C:\Users\andre\Downloads\PF_FdP_EspitiaAndres_ForeroDiego_UribeCamilo"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;co.edu.unbosque.model.peristence&apos; to &apos;co.edu.unbosque.model.persistence&apos;&#x0D;&#x0A;- Original project: &apos;Red Thread&apos;&#x0D;&#x0A;- Original element: &apos;Red Thread/src/co.edu.unbosque.model.peristence&apos;&#x0D;&#x0A;- Renamed element: &apos;Red Thread/src/co.edu.unbosque.model.persistence&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;co.edu.unbosque.model.peristence&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;co.edu.unbosque.model.peristence" name="co.edu.unbosque.model.persistence" qualified="false" references="true" stamp="1668388892420" textual="false" version="1.0"/>
+</session>

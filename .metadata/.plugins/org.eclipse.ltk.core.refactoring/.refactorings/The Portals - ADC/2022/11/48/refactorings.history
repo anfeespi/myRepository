@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Matches.java&apos; to &apos;Red Thread/src/co.edu.unbosque.view&apos;&#x0D;&#x0A;- Original project: &apos;The Portals - ADC&apos;&#x0D;&#x0A;- Destination element: &apos;Red Thread/src/co.edu.unbosque.view&apos;&#x0D;&#x0A;- Original element: &apos;co.edu.unbosque.view.Matches.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=Red Thread/src&lt;co.edu.unbosque.view" element1="/src&lt;co.edu.unbosque.view{Matches.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1669506312264" units="1" version="1.0"/>
+</session>

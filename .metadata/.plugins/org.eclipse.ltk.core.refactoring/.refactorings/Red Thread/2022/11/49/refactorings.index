@@ -1,0 +1,12 @@
+1669582954803	Rename type 'CreatePerfilFrame'
+1669582966531	Rename type 'CreatePerfilPanel'
+1669583135767	Rename type 'CostumeProfileFrame'
+1669583145705	Rename type 'CostumeProfilePanel'
+1669583496758	Delete element
+1669583927326	Rename type 'SingInFrame'
+1669583934937	Rename type 'SingInPanel'
+1669583966144	Rename field 'singIn'
+1669583981193	Rename method 'getSingIn'
+1669583990513	Rename method 'setSingIn'
+1669591792758	Delete element
+1669602385789	Rename type 'EarningsSort'

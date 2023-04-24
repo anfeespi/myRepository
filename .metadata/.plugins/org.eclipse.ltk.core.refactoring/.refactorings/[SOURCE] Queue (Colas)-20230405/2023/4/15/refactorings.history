@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Cola.java&apos; to &apos;JuanmaProyecto/src/co.edu.unbosque.model&apos;&#x0D;&#x0A;- Original project: &apos;[SOURCE] Queue (Colas)-20230405&apos;&#x0D;&#x0A;- Destination element: &apos;JuanmaProyecto/src/co.edu.unbosque.model&apos;&#x0D;&#x0A;- Original element: &apos;Cola.java&apos;" description="Copy compilation unit" destination="=JuanmaProyecto/src&lt;co.edu.unbosque.model" element1="/&lt;{Cola.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1681076927472" units="1" version="1.0"/>
+</session>
