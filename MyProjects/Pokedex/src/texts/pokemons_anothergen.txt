@@ -1,0 +1,2 @@
+Pikachu;1;2,5kg;0,5m;Electrico;Impactrueno_Bola voltio_Campo eléctrico_Carga parábola;Masculino;Generacion I;pokeball
+Baboni;120;85kg;1.90m;Volador-Psiquico;Bellakeo_ _ _ _;cuando quiere;Generacion I;masterball
