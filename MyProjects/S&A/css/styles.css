@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.column{
+    flex: 12.5%;
+    padding: 5px;
+}
+
+.column img{
+    margin-top: 5px;
+}
+
+@media (max-width: 600px){
+    .column{
+        flex: 100%;
+    }
+}
+
+@media (max-width: 800px){
+    .column{
+        flex: 50%;
+    }
+}
+
+@font-face {
+
+    font-family: SpaceMono NFM;
+    
+    src: url("/Letra1.ttf");
+    
+    }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+ul li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  /* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+main{
+    margin-top: 70px;
+}
+
+header {
+    width: 100%;
+    background-color: mediumpurple;
+    position: fixed;
+    top: 0;
+}
+
+.item{
+    scroll-margin-top: 8ex;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: SpaceMono NFM;
+}
