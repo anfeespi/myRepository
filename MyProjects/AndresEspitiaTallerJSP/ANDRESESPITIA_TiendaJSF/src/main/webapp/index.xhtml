@@ -1,0 +1,60 @@
+<html xmlns="http://www.w3c.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>Tienda Confecciones</title>
+</h:head>
+<h:body>
+	<p:confirmDialog visible="#{shopBean.condition}" message="#{shopBean.error_message}" header="Hay algo mal en tus datos!" severity="alert" widgetVar="cd">
+	</p:confirmDialog>
+	<h:form>
+		<p:panel header="Formulario de Compra" style="width:350px">
+			<h:panelGrid columns="2" cellpadding="5">
+				<h:outputLabel for="@next" value="Articulo a Comprar: " />
+				<p:selectOneMenu id="option" value="#{shopBean.article}">
+					<f:selectItem itemLabel="Zapatos" itemValue="Zapatos" />
+					<f:selectItem itemLabel="Camisa" itemValue="Camisa" />
+					<f:selectItem itemLabel="Reloj" itemValue="Reloj" />
+					<f:selectItem itemLabel="Libro" itemValue="Libro" />
+					<f:selectItem itemLabel="Computador" itemValue="Computador" />
+					<f:facet name="footer">
+						<h:outputText value="5 opciones" style="font-weight:bold;" />
+					</f:facet>
+				</p:selectOneMenu>
+
+				<h:outputLabel for="@next" value="Cantidad" />
+				<p:inputNumber id="quantity" value="#{shopBean.quantity}"
+					minValue="1" decimalPlaces="0" />
+
+				<h:outputLabel for="@next" value="Precio" />
+				<p:inputNumber id="value" value="#{shopBean.value}" minValue="1"
+					decimalPlaces="0" />
+
+				<h:outputLabel for="@next" value="Nombres" />
+				<p:inputText id="names" value="#{shopBean.names}"/>
+				
+
+				<h:outputLabel for="@next" value="Apellidos" />
+				<p:inputText id="last_names" value="#{shopBean.last_names}"/>
+
+				<h:outputLabel for="@next" value="Tipo de Tarjeta" />
+				<p:selectOneRadio id="console" value="#{shopBean.type}" layout="grid" columns="1" styleClass="grid-radio">
+					<f:selectItems value="#{shopBean.cards}" var="card" itemLabel="#{card}" itemValue="#{card}"/>
+				</p:selectOneRadio>
+				
+				<h:outputLabel for="number" value="Numero de la Tarjeta" />
+				<p:inputMask id="number" value="#{shopBean.number}" mask="9999-9999-9999-9999"/>
+				
+				<h:outputLabel for="confirm_number" value="Confirmar numero de la Tarjeta"/>
+				<p:inputMask id="confirm_number" value="#{shopBean.confirm_number}" mask="9999-9999-9999-9999"/>
+				
+				<f:facet name="footer">
+					<h:commandButton value="Comprar" action="#{shopBean.validate}"/>
+				</f:facet>
+			</h:panelGrid>
+		</p:panel>
+	</h:form>
+</h:body>
+</html>
