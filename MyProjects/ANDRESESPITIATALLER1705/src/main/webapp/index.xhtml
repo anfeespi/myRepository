@@ -1,0 +1,30 @@
+<html xmlns="http://www.w3c.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>Taller 17/05</title>
+</h:head>
+<h:body>
+	<h:form>
+		<p:panel header="Agregar Estudiante" style="width:350px">
+			<h:panelGrid columns="2" cellpadding="5">
+
+
+				<h:outputLabel for="@next" value="Cedula" />
+				<p:inputNumber id="cedula" value="#{estudiantesBean.cedula}"
+					minValue="1" decimalPlaces="0" />
+
+				<h:outputLabel for="@next" value="Espitia" />
+				<p:inputText id="espitia" value="#{estudiantesBean.espitia}" />
+
+
+				<f:facet name="footer">
+					<h:commandButton value="Agregar" action="#{estudiantesBean.agregar}" />
+				</f:facet>
+			</h:panelGrid>
+		</p:panel>
+	</h:form>
+</h:body>
+</html>
