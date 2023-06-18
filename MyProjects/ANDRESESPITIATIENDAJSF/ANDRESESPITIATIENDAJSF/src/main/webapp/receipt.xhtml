@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3c.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title>Su Recibo</title>
+</h:head>
+<h:body>
+	<p:panel header="Su Recibo" style="width:850px">
+		<h:panelGrid columns="1" cellpadding="5">
+			<h:outputText value="Señor Usuario: #{shopBean.names} #{shopBean.last_names}" />
+			<h:outputText value="Su compra fue realizada satisfactoriamente por un valor de: #{shopBean.total_value}."/>
+			<h:outputText value="Correspondiente a #{shopBean.quantity} #{shopBean.article}"/>
+			<h:outputText value="El precio por unidad fue de: #{shopBean.value}"/>
+			<h:outputText value="La compra fue realizada con la tarjeta de crédito número: **** **** **** #{shopBean.number} de la franquicia #{shopBean.type}"/>
+			<h:outputText value="Fecha de la compra: #{shopBean.date}"/>
+			<h:outputText value="Direccion IP: #{shopBean.ip}"/>
+			<p:commandButton value="Volver a comprar" onclick="history.go(-1)"/>
+		</h:panelGrid>
+	</p:panel>
+</h:body>
+</html>
