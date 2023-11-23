@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:th="http://www.thymeleaf.org">
+
+<h:head>
+	<title>EntreCol+ - Modulo Información Personal</title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+	<h:outputStylesheet library="webjars" name="primeflex/3.3.1/primeflex.min.css" />
+</h:head>
+<h:body>
+	<div class="header">
+        <h1>EntreCol+</h1>
+        <div class="menu-box justify-content-start" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="menu nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Modulo de Información </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="nomina.xhtml">Modulo de Nomina</a></li>
+                        <li><a class="dropdown-item" href="saludpension.xhtml">Modulo de Salud y Pensión</a></li>
+                        <li><a class="dropdown-item" href="novedades.xhtml">Modulo de Novedades</a></li>
+                        <li><a class="dropdown-item" href="base.xhtml">Modulo de Base-Entretenimiento</a></li>
+                    </ul></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sections">
+        <h1>Información personal de los empleados</h1>
+        <h:form style="width: 100%">
+				<p:dataTable id="empleados" var="empleado"
+					value="#{dtColumnsView.empleados}" widgetVar="tablaEmpleados"
+					filteredValue="#{dtColumnsView.empleados_filtrados}" resizableColumns="True" paginator="True" rows="10" style="Font-size: 10px">
+
+					<p:columns value="#{dtColumnsView.columnas_cuarta_tabla}" var="column"
+						headerText="#{column.header}" field="#{column.property}">
+					</p:columns>
+
+				</p:dataTable>
+		</h:form>
+    </div>
+
+    <div class="butt-informe">
+		<p:commandButton value="DESCARGAR INFORME (PDF)" styleClass="mr-2 mb-2" onclick="javascript:window.print()">
+		</p:commandButton>
+    </div>
+</h:body>
+</html>

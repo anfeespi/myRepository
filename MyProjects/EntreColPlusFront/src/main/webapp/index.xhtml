@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>EntreCol+</title>
+	<link rel="stylesheet" type="text/css" href="index.css" />
+	<h:outputStylesheet library="webjars" name="primeflex/3.3.1/primeflex.min.css" />
+</h:head>
+<h:body>
+	<div class="header">
+		<h1>EntreCol+</h1>
+	</div>
+	<div class="login">
+        <div>
+            <h2>Log In</h2>
+            <p:graphicImage library="primeblocks-app" alt="Imagen Log In" value="images/login_img.png" />
+        </div>
+        <div>
+            <h:form styleClass="form">
+            	<label for="usuario">Usuario:</label>
+            	<h:inputText value="#{AdminBean.username}"/>
+                <label for="contrasenia">Contraseña:</label>
+    			<h:inputSecret value="#{AdminBean.password}"/>
+				<h:commandButton action="#{AdminBean.login}" value="Log In" style="font-size: 1rem; background-color: #E5B8F4; width: 7rem"/>
+            </h:form>
+            <a class="link" href="">¿No tienes cuenta? Registrate aqui</a>
+        </div>
+    </div>
+</h:body>
+</html>

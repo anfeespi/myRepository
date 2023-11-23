@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:th="http://www.thymeleaf.org">
+
+<h:head>
+	<title>EntreCol+ - Modulo Novedades</title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+	<h:outputStylesheet library="webjars" name="primeflex/3.3.1/primeflex.min.css" />
+</h:head>
+<h:body>
+	<div class="header">
+        <h1>EntreCol+</h1>
+        <div class="menu-box justify-content-start" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="menu nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Modulo de Novedades </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="nomina.xhtml">Modulo de Nomina</a></li>
+                        <li><a class="dropdown-item" href="infopersonal.xhtml">Modulo de Información</a></li>
+                        <li><a class="dropdown-item" href="saludpension.xhtml">Modulo de Salud y Pensión</a></li>
+                        <li><a class="dropdown-item" href="base.xhtml">Modulo de Base-Entretenimiento</a></li>
+                    </ul></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sections">
+        <h1>Lista de empleados que tuvieron novedades</h1>
+        <h:form style="width: 100%">
+				<p:dataTable id="empleadosBonos" var="empleado"
+					value="#{dtColumnsView.empleados_bonos}" widgetVar="tablaEmpleadosBonos"
+					filteredValue="#{dtColumnsView.empleados_bonos_filtrados}" resizableColumns="True" paginator="True" rows="10" style="Font-size: 10px">
+
+					<p:columns width="100" value="#{dtColumnsView.columnas_novedades_tabla}" var="column"
+						headerText="#{column.header}" field="#{column.property}">
+					<f:facet name="filter">
+						<p:datePicker selectionMode="range" view="month" pattern="dd/MM/yyyy"
+							onchange="PF('tablaEmpleadosBonos').filter()"
+							rendered="#{column.header eq 'FECHA_INICIO_VACACIONES'}" />
+						<p:datePicker selectionMode="range" view="month" pattern="dd/MM/yyyy"
+							onchange="PF('tablaEmpleadosBonos').filter()"
+							rendered="#{column.header eq 'FECHA_INICIO_INCAPACIDAD'}" />
+						<p:datePicker selectionMode="range" view="month" pattern="dd/MM/yyyy"
+							onchange="PF('tablaEmpleadosBonos').filter()"
+							rendered="#{column.header eq 'FECHA_FIN_VACACIONES'}" />
+						<p:datePicker selectionMode="range" view="month" pattern="dd/MM/yyyy"
+							onchange="PF('tablaEmpleadosBonos').filter()"
+							rendered="#{column.header eq 'FECHA_FIN_INCAPACIDAD'}" />
+					</f:facet>
+				</p:columns>
+
+				</p:dataTable>
+		</h:form>
+    </div>
+
+    <div class="sections">
+        <h1>Lista de empleados que tuvieron novedades por dependencia y por cargo</h1>
+        <h:form style="width: 100%">
+				<p:dataTable id="empleadosBonos2" var="empleado"
+					value="#{dtColumnsView.empleados_bonos}" widgetVar="tablaEmpleadosBonos2"
+					filteredValue="#{dtColumnsView.empleados_bonos_filtrados}" resizableColumns="True" paginator="True" rows="10" style="Font-size: 10px">
+
+					<p:columns width="100" value="#{dtColumnsView.columnas_novedades_tabla2}" var="column"
+						headerText="#{column.header}" field="#{column.property}">
+					<f:facet name="filter">
+						<p:selectOneMenu onchange="PF('tablaEmpleados2').filter()"
+							rendered="#{column.header eq 'DEPENDENCIA'}">
+							<f:selectItem itemValue="#{null}" itemLabel="Ninguno" />
+							<f:selectItems value="#{dtColumnsView.filtro_dependencias}" />
+						</p:selectOneMenu>
+						<p:selectOneMenu onchange="PF('tablaEmpleados2').filter()"
+							rendered="#{column.header eq 'CARGO'}">
+							<f:selectItem itemValue="#{null}" itemLabel="Ninguno" />
+							<f:selectItems value="#{dtColumnsView.filtro_dependencias}" />
+						</p:selectOneMenu>
+						<p:datePicker selectionMode="range" view="month" pattern="dd/MM/yyyy"
+							onchange="PF('tablaEmpleadosBonos').filter()"
+							rendered="#{column.header eq 'FECHA_INICIO_VACACIONES'}" />
+						<p:datePicker selectionMode="range" view="month" pattern="dd/MM/yyyy"
+							onchange="PF('tablaEmpleadosBonos').filter()"
+							rendered="#{column.header eq 'FECHA_INICIO_INCAPACIDAD'}" />
+						<p:datePicker selectionMode="range" view="month" pattern="dd/MM/yyyy"
+							onchange="PF('tablaEmpleadosBonos').filter()"
+							rendered="#{column.header eq 'FECHA_FIN_VACACIONES'}" />
+						<p:datePicker selectionMode="range" view="month" pattern="dd/MM/yyyy"
+							onchange="PF('tablaEmpleadosBonos').filter()"
+							rendered="#{column.header eq 'FECHA_FIN_INCAPACIDAD'}" />
+					</f:facet>
+				</p:columns>
+
+				</p:dataTable>
+		</h:form>
+    </div>
+
+    <div class="butt-informe">
+		<p:commandButton value="DESCARGAR INFORME (PDF)" styleClass="mr-2 mb-2" onclick="javascript:window.print()">
+		</p:commandButton>
+    </div>
+</h:body>
+</html>
